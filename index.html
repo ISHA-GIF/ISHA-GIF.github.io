@@ -58,8 +58,15 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=3300443173');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=2542260093');
       });
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"> 
+  </script>
+  <script>
+    function webSaveAs(blob, name) {
+      saveAs(blob, name);
     }
   </script>
   <script src="main.dart.js" type="application/javascript"></script>
